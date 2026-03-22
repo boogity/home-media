@@ -13,8 +13,8 @@ services:
     ports:
       - 9696:9696
     restart: unless-stopped
+
 # Sonarr - PVR to TV
-services:
   sonarr:
     image: lscr.io/linuxserver/sonarr:latest
     container_name: sonarr
@@ -32,4 +32,8 @@ services:
 
 # Radarr - PVR for Movies
 # Overseerr - User-friendly manager for this automation
+# FlareSolverr - Cloudflare likes to block certain indexers, can bypass with this
+#     E.g., 1337x.to, EZTV
+# Lidarr - DUNNO
+# Readarr - Books, skip
 # Nginx - Reverse Proxy these bitche/s
