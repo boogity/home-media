@@ -1,3 +1,5 @@
+# Prowlarr - Centralized management of indexers for all *arrs
+# Sonarr - PVR to TV
 services:
   sonarr:
     image: lscr.io/linuxserver/sonarr:latest
@@ -16,3 +18,4 @@ services:
 
 # Radarr - PVR for Movies
 # Overseerr - User-friendly manager for this automation
+# Nginx - Reverse Proxy these bitche/s

@@ -5329,3 +5329,297 @@
 2026-03-22 16:22:12.6|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
 2026-03-22 16:22:12.6|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
 2026-03-22 16:22:12.6|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-03-22 16:32:36.6|Info|RssSyncService|Starting RSS Sync
+2026-03-22 16:32:36.6|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2026-03-22 16:32:36.6|Info|DownloadDecisionMaker|No results found
+2026-03-22 16:32:36.6|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2026-03-22 16:47:36.9|Info|RssSyncService|Starting RSS Sync
+2026-03-22 16:47:36.9|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2026-03-22 16:47:36.9|Info|DownloadDecisionMaker|No results found
+2026-03-22 16:47:36.9|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2026-03-22 17:02:37.3|Info|RssSyncService|Starting RSS Sync
+2026-03-22 17:02:37.3|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2026-03-22 17:02:37.3|Info|DownloadDecisionMaker|No results found
+2026-03-22 17:02:37.3|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2026-03-22 17:17:37.7|Info|RssSyncService|Starting RSS Sync
+2026-03-22 17:17:37.7|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2026-03-22 17:17:37.7|Info|DownloadDecisionMaker|No results found
+2026-03-22 17:17:37.7|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2026-03-22 17:32:38.0|Info|RssSyncService|Starting RSS Sync
+2026-03-22 17:32:38.0|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2026-03-22 17:32:38.0|Info|DownloadDecisionMaker|No results found
+2026-03-22 17:32:38.0|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2026-03-22 17:47:38.3|Info|RssSyncService|Starting RSS Sync
+2026-03-22 17:47:38.3|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2026-03-22 17:47:38.3|Info|DownloadDecisionMaker|No results found
+2026-03-22 17:47:38.3|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2026-03-22 18:02:38.7|Info|RssSyncService|Starting RSS Sync
+2026-03-22 18:02:38.7|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2026-03-22 18:02:38.7|Info|DownloadDecisionMaker|No results found
+2026-03-22 18:02:38.7|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2026-03-22 18:05:06.3|Error|QBittorrent|Unable to test qBittorrent
+
+[v4.0.17.2952] System.Net.Http.HttpRequestException: Connection refused (localhost:8080)
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.attemptConnection(AddressFamily addressFamily, SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./Sonarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 327
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.onConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./Sonarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 313
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./Sonarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 115
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./Sonarr.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Sonarr.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Sonarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxyV2.IsApiSupported(QBittorrentSettings settings) in ./Sonarr.Core/Download/Clients/QBittorrent/QBittorrentProxyV2.cs:line 36
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.FetchProxy(QBittorrentSettings settings) in ./Sonarr.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 82
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.<>c__DisplayClass7_0.<GetProxyCache>b__0() in ./Sonarr.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 77
+   at NzbDrone.Common.Cache.Cached`1.Get(String key, Func`1 function, Nullable`1 lifeTime) in ./Sonarr.Common/Cache/Cached.cs:line 99
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.GetProxyCache(QBittorrentSettings settings, Boolean force) in ./Sonarr.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 77
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.GetProxy(QBittorrentSettings settings, Boolean force) in ./Sonarr.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 60
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrent.TestConnection() in ./Sonarr.Core/Download/Clients/QBittorrent/QBittorrent.cs:line 435
+
+2026-03-22 18:05:06.3|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- Host: Unable to connect to qBittorrent
+2026-03-22 18:05:32.5|Error|QBittorrent|Unable to test qBittorrent
+
+[v4.0.17.2952] System.Net.Http.HttpRequestException: Resource temporarily unavailable (desktop.williamdell.com:8080)
+ ---> System.Net.Sockets.SocketException (11): Resource temporarily unavailable
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.attemptConnection(AddressFamily addressFamily, SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./Sonarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 327
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.onConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./Sonarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 313
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./Sonarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 115
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./Sonarr.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Sonarr.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Sonarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxyV2.IsApiSupported(QBittorrentSettings settings) in ./Sonarr.Core/Download/Clients/QBittorrent/QBittorrentProxyV2.cs:line 36
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.FetchProxy(QBittorrentSettings settings) in ./Sonarr.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 82
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.<>c__DisplayClass7_0.<GetProxyCache>b__0() in ./Sonarr.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 77
+   at NzbDrone.Common.Cache.Cached`1.Get(String key, Func`1 function, Nullable`1 lifeTime) in ./Sonarr.Common/Cache/Cached.cs:line 99
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.GetProxyCache(QBittorrentSettings settings, Boolean force) in ./Sonarr.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 77
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.GetProxy(QBittorrentSettings settings, Boolean force) in ./Sonarr.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 60
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrent.TestConnection() in ./Sonarr.Core/Download/Clients/QBittorrent/QBittorrent.cs:line 435
+
+2026-03-22 18:05:32.5|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- Host: Unable to connect to qBittorrent
+2026-03-22 18:05:55.0|Error|QBittorrent|Unable to test qBittorrent
+
+[v4.0.17.2952] System.Net.Http.HttpRequestException: Resource temporarily unavailable (desktop.williamdell.com:8080)
+ ---> System.Net.Sockets.SocketException (11): Resource temporarily unavailable
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.attemptConnection(AddressFamily addressFamily, SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./Sonarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 327
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.onConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./Sonarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 313
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./Sonarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 115
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./Sonarr.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Sonarr.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Sonarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxyV2.IsApiSupported(QBittorrentSettings settings) in ./Sonarr.Core/Download/Clients/QBittorrent/QBittorrentProxyV2.cs:line 36
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.FetchProxy(QBittorrentSettings settings) in ./Sonarr.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 82
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.<>c__DisplayClass7_0.<GetProxyCache>b__0() in ./Sonarr.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 77
+   at NzbDrone.Common.Cache.Cached`1.Get(String key, Func`1 function, Nullable`1 lifeTime) in ./Sonarr.Common/Cache/Cached.cs:line 99
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.GetProxyCache(QBittorrentSettings settings, Boolean force) in ./Sonarr.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 77
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.GetProxy(QBittorrentSettings settings, Boolean force) in ./Sonarr.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 60
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrent.TestConnection() in ./Sonarr.Core/Download/Clients/QBittorrent/QBittorrent.cs:line 435
+
+2026-03-22 18:05:55.1|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- Host: Unable to connect to qBittorrent
+2026-03-22 18:06:00.9|Error|QBittorrent|Unable to test qBittorrent
+
+[v4.0.17.2952] System.Net.Http.HttpRequestException: Resource temporarily unavailable (desktop.williamdell.com:8080)
+ ---> System.Net.Sockets.SocketException (11): Resource temporarily unavailable
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.attemptConnection(AddressFamily addressFamily, SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./Sonarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 327
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.onConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./Sonarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 313
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./Sonarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 115
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./Sonarr.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Sonarr.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Sonarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxyV2.IsApiSupported(QBittorrentSettings settings) in ./Sonarr.Core/Download/Clients/QBittorrent/QBittorrentProxyV2.cs:line 36
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.FetchProxy(QBittorrentSettings settings) in ./Sonarr.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 82
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.<>c__DisplayClass7_0.<GetProxyCache>b__0() in ./Sonarr.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 77
+   at NzbDrone.Common.Cache.Cached`1.Get(String key, Func`1 function, Nullable`1 lifeTime) in ./Sonarr.Common/Cache/Cached.cs:line 99
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.GetProxyCache(QBittorrentSettings settings, Boolean force) in ./Sonarr.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 77
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.GetProxy(QBittorrentSettings settings, Boolean force) in ./Sonarr.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 60
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrent.TestConnection() in ./Sonarr.Core/Download/Clients/QBittorrent/QBittorrent.cs:line 435
+
+2026-03-22 18:06:00.9|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- Host: Unable to connect to qBittorrent
+2026-03-22 18:06:11.8|Warn|SonarrErrorPipeline|Invalid request Validation failed: 
+ -- : qBittorrent is configured to remove torrents when they reach their Share Ratio Limit
+2026-03-22 18:08:11.7|Info|SceneMappingService|Updating Scene mappings
+2026-03-22 18:08:12.7|Info|RefreshSeriesService|Updating America in the Gilded Age and Progressive Era
+2026-03-22 18:08:13.8|Info|RefreshEpisodeService|Starting episode info refresh for: [444674][America in the Gilded Age and Progressive Era]
+2026-03-22 18:08:13.9|Info|RefreshEpisodeService|Finished episode refresh for series: [444674][America in the Gilded Age and Progressive Era].
+2026-03-22 18:08:13.9|Info|DiskScanService|Scanning America in the Gilded Age and Progressive Era
+2026-03-22 18:08:14.0|Info|DiskScanService|Completed scanning disk for America in the Gilded Age and Progressive Era
+2026-03-22 18:08:14.0|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-03-22 18:08:14.0|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-03-22 18:08:14.0|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-03-22 18:08:14.0|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-03-22 18:08:15.4|Info|RefreshSeriesService|Updating America in the Gilded Age and Progressive Era
+2026-03-22 18:08:15.5|Info|RefreshEpisodeService|Starting episode info refresh for: [444674][America in the Gilded Age and Progressive Era]
+2026-03-22 18:08:15.7|Info|RefreshEpisodeService|Finished episode refresh for series: [444674][America in the Gilded Age and Progressive Era].
+2026-03-22 18:08:15.7|Info|DiskScanService|Scanning America in the Gilded Age and Progressive Era
+2026-03-22 18:08:15.7|Info|DiskScanService|Completed scanning disk for America in the Gilded Age and Progressive Era
+2026-03-22 18:08:15.7|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-03-22 18:08:15.7|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-03-22 18:08:15.7|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-03-22 18:08:15.7|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-03-22 18:08:15.7|Info|RefreshSeriesService|Updating Atomic Age Declassified
+2026-03-22 18:08:16.3|Info|RefreshEpisodeService|Starting episode info refresh for: [362073][Atomic Age Declassified]
+2026-03-22 18:08:16.4|Info|RefreshEpisodeService|Finished episode refresh for series: [362073][Atomic Age Declassified].
+2026-03-22 18:08:16.4|Info|DiskScanService|Scanning Atomic Age Declassified
+2026-03-22 18:08:16.7|Info|DiskScanService|Completed scanning disk for Atomic Age Declassified
+2026-03-22 18:08:16.7|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-03-22 18:08:16.7|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-03-22 18:08:16.8|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-03-22 18:08:16.8|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-03-22 18:08:16.8|Info|RefreshSeriesService|Updating The Fresh Prince of Bel-Air
+2026-03-22 18:08:16.9|Info|RefreshEpisodeService|Starting episode info refresh for: [76738][The Fresh Prince of Bel-Air]
+2026-03-22 18:08:17.7|Info|RefreshEpisodeService|Finished episode refresh for series: [76738][The Fresh Prince of Bel-Air].
+2026-03-22 18:08:17.7|Info|DiskScanService|Scanning The Fresh Prince of Bel-Air
+2026-03-22 18:08:17.8|Info|DiskScanService|Completed scanning disk for The Fresh Prince of Bel-Air
+2026-03-22 18:08:17.8|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-03-22 18:08:17.8|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-03-22 18:08:17.8|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-03-22 18:08:17.8|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-03-22 18:08:17.8|Info|RefreshSeriesService|Updating The Great War: The Complete History of World War I
+2026-03-22 18:08:18.2|Info|RefreshEpisodeService|Starting episode info refresh for: [439247][The Great War: The Complete History of World War I]
+2026-03-22 18:08:18.2|Info|RefreshEpisodeService|Finished episode refresh for series: [439247][The Great War: The Complete History of World War I].
+2026-03-22 18:08:18.2|Info|DiskScanService|Scanning The Great War: The Complete History of World War I
+2026-03-22 18:08:18.3|Info|DiskScanService|Completed scanning disk for The Great War: The Complete History of World War I
+2026-03-22 18:08:18.3|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-03-22 18:08:18.3|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-03-22 18:08:18.3|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-03-22 18:08:18.3|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-03-22 18:08:18.3|Info|RefreshSeriesService|Updating Kiseki Miracle Season
+2026-03-22 18:08:18.6|Info|RefreshEpisodeService|Starting episode info refresh for: [447674][Kiseki Miracle Season]
+2026-03-22 18:08:18.7|Info|RefreshEpisodeService|Finished episode refresh for series: [447674][Kiseki Miracle Season].
+2026-03-22 18:08:18.7|Info|DiskScanService|Scanning Kiseki Miracle Season
+2026-03-22 18:08:19.0|Info|DiskScanService|Completed scanning disk for Kiseki Miracle Season
+2026-03-22 18:08:19.0|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-03-22 18:08:19.0|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-03-22 18:08:19.0|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-03-22 18:08:19.0|Info|ExistingExtraFileService|Found 1 possible extra files, imported 0 files.
+2026-03-22 18:08:19.0|Info|RefreshSeriesService|Updating A Knight of the Seven Kingdoms
+2026-03-22 18:08:19.1|Info|RefreshEpisodeService|Starting episode info refresh for: [433631][A Knight of the Seven Kingdoms]
+2026-03-22 18:08:19.2|Info|RefreshEpisodeService|Finished episode refresh for series: [433631][A Knight of the Seven Kingdoms].
+2026-03-22 18:08:19.2|Info|DiskScanService|Scanning A Knight of the Seven Kingdoms
+2026-03-22 18:08:19.2|Info|DiskScanService|Completed scanning disk for A Knight of the Seven Kingdoms
+2026-03-22 18:08:19.2|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-03-22 18:08:19.2|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-03-22 18:08:19.2|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-03-22 18:08:19.2|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-03-22 18:08:19.2|Info|RefreshSeriesService|Updating The Middle Ages Around the World
+2026-03-22 18:08:19.8|Info|RefreshEpisodeService|Starting episode info refresh for: [470763][The Middle Ages Around the World]
+2026-03-22 18:08:20.0|Info|RefreshEpisodeService|Finished episode refresh for series: [470763][The Middle Ages Around the World].
+2026-03-22 18:08:20.0|Info|DiskScanService|Scanning The Middle Ages Around the World
+2026-03-22 18:08:20.0|Info|DiskScanService|Completed scanning disk for The Middle Ages Around the World
+2026-03-22 18:08:20.0|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-03-22 18:08:20.0|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-03-22 18:08:20.0|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-03-22 18:08:20.0|Info|ExistingExtraFileService|Found 27 possible extra files, imported 27 files.
+2026-03-22 18:08:20.0|Info|RefreshSeriesService|Updating Severance
+2026-03-22 18:08:20.1|Info|RefreshEpisodeService|Starting episode info refresh for: [371980][Severance]
+2026-03-22 18:08:20.4|Info|RefreshEpisodeService|Finished episode refresh for series: [371980][Severance].
+2026-03-22 18:08:20.4|Info|DiskScanService|Scanning Severance
+2026-03-22 18:08:20.4|Info|DiskScanService|Completed scanning disk for Severance
+2026-03-22 18:08:20.4|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-03-22 18:08:20.4|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-03-22 18:08:20.4|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-03-22 18:08:20.4|Info|ExistingExtraFileService|Found 6 possible extra files, imported 2 files.
+2026-03-22 18:08:41.2|Info|RecycleBinProvider|Attempting to send '/tv/Severance Season 1 Mp4 1080p' to recycling bin
+2026-03-22 18:08:41.2|Info|RecycleBinProvider|Recycling Bin has not been configured, deleting permanently. /tv/Severance Season 1 Mp4 1080p
+2026-03-22 18:08:52.9|Info|RecycleBinProvider|Attempting to send '/tv/The.Gilded.Age.S01.1080p.WEBRip.x265[eztv.re]' to recycling bin
+2026-03-22 18:08:52.9|Info|RecycleBinProvider|Recycling Bin has not been configured, deleting permanently. /tv/The.Gilded.Age.S01.1080p.WEBRip.x265[eztv.re]
+2026-03-22 18:09:04.7|Info|RecycleBinProvider|Attempting to send '/tv/Severance Season 2' to recycling bin
+2026-03-22 18:09:04.7|Info|RecycleBinProvider|Recycling Bin has not been configured, deleting permanently. /tv/Severance Season 2
+2026-03-22 18:09:21.2|Info|RecycleBinProvider|Attempting to send '/tv/The.Gilded.Age.S03.Complete.1080p.10bit.WEBRip.6CH.x265.HEVC-PSA' to recycling bin
+2026-03-22 18:09:21.2|Info|RecycleBinProvider|Recycling Bin has not been configured, deleting permanently. /tv/The.Gilded.Age.S03.Complete.1080p.10bit.WEBRip.6CH.x265.HEVC-PSA
+2026-03-22 18:09:52.4|Info|RecycleBinProvider|Attempting to send '/tv/The.Gilded.Age.S02.1080p.x265-ELiTE[EZTVx.to]' to recycling bin
+2026-03-22 18:09:52.4|Info|RecycleBinProvider|Recycling Bin has not been configured, deleting permanently. /tv/The.Gilded.Age.S02.1080p.x265-ELiTE[EZTVx.to]
+2026-03-22 18:09:58.2|Info|SceneMappingService|Updating Scene mappings
+2026-03-22 18:09:59.0|Info|RefreshSeriesService|Updating Atomic Age Declassified
+2026-03-22 18:09:59.1|Info|RefreshEpisodeService|Starting episode info refresh for: [362073][Atomic Age Declassified]
+2026-03-22 18:09:59.2|Info|RefreshEpisodeService|Finished episode refresh for series: [362073][Atomic Age Declassified].
+2026-03-22 18:09:59.2|Info|DiskScanService|Scanning Atomic Age Declassified
+2026-03-22 18:09:59.4|Info|DiskScanService|Completed scanning disk for Atomic Age Declassified
+2026-03-22 18:09:59.4|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-03-22 18:09:59.4|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-03-22 18:09:59.4|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-03-22 18:09:59.4|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-03-22 18:09:59.4|Info|RefreshSeriesService|Updating The Fresh Prince of Bel-Air
+2026-03-22 18:09:59.5|Info|RefreshEpisodeService|Starting episode info refresh for: [76738][The Fresh Prince of Bel-Air]
+2026-03-22 18:10:00.6|Info|RefreshEpisodeService|Finished episode refresh for series: [76738][The Fresh Prince of Bel-Air].
+2026-03-22 18:10:00.6|Info|DiskScanService|Scanning The Fresh Prince of Bel-Air
+2026-03-22 18:10:00.6|Info|DiskScanService|Completed scanning disk for The Fresh Prince of Bel-Air
+2026-03-22 18:10:00.6|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-03-22 18:10:00.6|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-03-22 18:10:00.6|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-03-22 18:10:00.6|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2026-03-22 18:10:00.7|Info|RefreshSeriesService|Updating A Knight of the Seven Kingdoms
+2026-03-22 18:10:00.7|Info|RefreshEpisodeService|Starting episode info refresh for: [433631][A Knight of the Seven Kingdoms]
+2026-03-22 18:10:00.8|Info|RefreshEpisodeService|Finished episode refresh for series: [433631][A Knight of the Seven Kingdoms].
+2026-03-22 18:10:00.8|Info|DiskScanService|Scanning A Knight of the Seven Kingdoms
+2026-03-22 18:10:00.9|Info|DiskScanService|Completed scanning disk for A Knight of the Seven Kingdoms
+2026-03-22 18:10:00.9|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2026-03-22 18:10:00.9|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2026-03-22 18:10:00.9|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2026-03-22 18:10:00.9|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
