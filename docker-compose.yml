@@ -1,5 +1,3 @@
-# Sonarr - PVR for TV
----
 services:
   sonarr:
     image: lscr.io/linuxserver/sonarr:latest
@@ -7,11 +5,11 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Etc/UTC
+      - TZ=America/Chicago
     volumes:
-      - /path/to/sonarr/data:/config
-      - /path/to/tvseries:/tv #optional
-      - /path/to/downloadclient-downloads:/downloads #optional
+      - ./sonarr-configs:/config
+      - "/mnt/homeshare/Media/TV Shows:/tv"
+      - /mnt/homeshare/torrents/tv:/downloads
     ports:
       - 8989:8989
     restart: unless-stopped
