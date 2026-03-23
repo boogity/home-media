@@ -31,9 +31,36 @@ services:
     restart: unless-stopped
 
 # Radarr - PVR for Movies
+  radarr:
+    image: lscr.io/linuxserver/radarr:latest
+    container_name: radarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Chicago
+    volumes:
+      - ./radarr-configs:/config
+      - /mnt/homeshare/Media/Movies:/movies
+      - /mnt/homeshare/torrents/movies:/downloads
+    ports:
+      - 7878:7878
+    restart: unless-stopped
+
 # Overseerr - User-friendly manager for this automation
+  overseerr:
+    image: lscr.io/linuxserver/overseerr:latest
+    container_name: overseerr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Chicago
+    volumes:
+      - ./overseerr-configs:/config
+    ports:
+      - 5055:5055
+    restart: unless-stopped
 # FlareSolverr - Cloudflare likes to block certain indexers, can bypass with this
 #     E.g., 1337x.to, EZTV
-# Lidarr - DUNNO
+# Lidarr - Music, skip
 # Readarr - Books, skip
 # Nginx - Reverse Proxy these bitche/s
