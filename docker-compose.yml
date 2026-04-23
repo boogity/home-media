@@ -24,8 +24,8 @@ services:
       - TZ=America/Chicago
     volumes:
       - ./sonarr-configs:/config
-      - "/mnt/homeshare/Media/TV Shows:/tv"
-      - /mnt/homeshare/torrents/tv:/downloads
+      - "/mnt/homeshare/Media/TV Shows:/mnt/homeshare/Media/TV Shows"
+      - /mnt/homeshare/torrents/tv:/mnt/homeshare/torrents/tv
     ports:
       - 8989:8989
     restart: unless-stopped
@@ -40,8 +40,8 @@ services:
       - TZ=America/Chicago
     volumes:
       - ./radarr-configs:/config
-      - /mnt/homeshare/Media/Movies:/movies
-      - /mnt/homeshare/torrents/movies:/downloads
+      - /mnt/homeshare/Media/Movies:/mnt/homeshare/Media/Movies
+      - /mnt/homeshare/torrents/movies:/mnt/homeshare/torrents/movies
     ports:
       - 7878:7878
     restart: unless-stopped
@@ -59,6 +59,21 @@ services:
     ports:
       - 5055:5055
     restart: unless-stopped
+
+# Nginx - Reverse Proxy these bitche/s
+  nginx:
+      image: nginx:stable-alpine
+      container_name: nginx-rp
+      ports:
+        - 80:80
+      volumes:
+        - ./nginx-configs/nginx.conf:/etc/nginx/nginx.conf:ro
+      restart: unless-stopped
+      depends_on:
+        - radarr
+        - sonarr
+        - overseerr
+
 # FlareSolverr - Cloudflare likes to block certain indexers, can bypass with this
 #     E.g., 1337x.to, EZTV
 #     NOTE: Does not seem to work as of 04-2026
@@ -76,4 +91,3 @@ services:
 #    restart: unless-stopped 
 # Lidarr - Music, skip
 # Readarr - Books, skip
-# Nginx - Reverse Proxy these bitche/s
